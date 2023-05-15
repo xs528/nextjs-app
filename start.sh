@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd $(dirname $0)
-npm start
+node node_modules/.bin/next start -p 3000
