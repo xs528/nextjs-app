@@ -5,7 +5,7 @@ const options = {
   method: 'POST',
   url: 'https://api.openai.com/v1/chat/completions',
   headers: {
-    Authorization: 'Bearer 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',
+    Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
     'content-type': 'application/json'
   },
 };
