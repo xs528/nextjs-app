@@ -14,7 +14,7 @@ export default function Home() {
       </main>
       <footer className="flex-none footer footer-center p-4 bg-base-300 text-base-content">
         <div>
-          <a className="mr-4 link link-hover" href="https://beian.miit.gov.cn" target="_blank">湘ICP备2023012577号-1</a>
+          <a className="link link-hover" href="https://beian.miit.gov.cn" target="_blank">湘ICP备2023012577号-1</a>
           <p>Copyright © 2023 - All right reserved by XShuai</p>
         </div>
       </footer>

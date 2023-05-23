@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Chat By Nextjs',
-  description: 'open ai chat by nextjs',
+  title: 'All By Nextjs',
+  description: 'all by nextjs',
 }
 
 export default function RootLayout({
