@@ -35,7 +35,7 @@ export default function Page() {
     }
   }, [send]);
 
-  return <main className="h-screen">
+  return <main className="h-full">
     <div className="p-[20px] flex flex-col h-full max-w-screen-sm mx-auto"> 
       <div className="flex-auto">
         {list.map(item => {
