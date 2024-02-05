@@ -1,3 +1,6 @@
+import { ToastContainer } from "@/components/Toast";
+import { theme } from "@/constants";
+
 import "./globals.css";
 
 export const metadata = {
@@ -11,8 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="zh" data-theme="dark">
-      <body>{children}</body>
+    <html lang="zh" data-theme={theme}>
+      <body>
+        {children}
+        <ToastContainer />
+      </body>
     </html>
   );
 }
