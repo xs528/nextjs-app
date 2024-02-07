@@ -2,24 +2,31 @@
 import { useState } from "react";
 import axios from "axios";
 
-import toast from "@/components/Toast";
+import toast from "@/src/components/Toast";
 
 export default function Page() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  function signup() {
+  function login() {
     if (!username || !password) {
+      toast.info("请输入账号和密码");
       return;
     }
 
     axios
-      .post("/api/signup", {
+      .post("/api/login", {
         username,
         password,
       })
       .then((result) => {
-        toast.success("注册成功");
+        toast.success("登录成功");
+        setTimeout(() => {
+          window.location.href = "/";
+        }, 1000);
+      })
+      .catch((err) => {
+        toast.error("登录失败");
       });
   }
 
@@ -51,8 +58,8 @@ export default function Page() {
         />
       </label>
       <div className="flex justify-center mt-5">
-        <button className="btn btn-primary" onClick={signup}>
-          注册
+        <button className="btn btn-primary btn-wide" onClick={login}>
+          登录
         </button>
       </div>
     </div>

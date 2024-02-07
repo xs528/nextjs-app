@@ -1,6 +1,6 @@
 import { ToastContainer as ToastContainerTemp, toast, Flip } from "react-toastify";
 
-import { theme } from "@/constants";
+import { theme } from "@/src/constants";
 
 import "react-toastify/dist/ReactToastify.css";
 // minified version is also included

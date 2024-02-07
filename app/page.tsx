@@ -1,14 +1,24 @@
-export default function Home() {
+import { redirect } from 'next/navigation'
+
+import { getUserInfo } from "@/src/modules/login/actions";
+
+export default async function Page() {
+  const userInfo = await getUserInfo();
+
+  if (!userInfo) {
+    redirect('/login');
+  }
+
   return (
     <div className="flex min-h-full flex-col items-center justify-between">
       <div
         className="flex-auto w-full hero min-h-screen"
-        style={{ backgroundImage: `url("/main-bg.jpg")` }}
+        // style={{ backgroundImage: `url("/main-bg.jpg")` }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
-            <h1 className="mb-5 text-8xl font-bold">Hello</h1>
+            <h1 className="mb-5 text-5xl">Hello {userInfo?.name}</h1>
           </div>
         </div>
       </div>

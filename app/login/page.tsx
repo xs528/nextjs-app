@@ -1,28 +1,13 @@
-import dynamic from "next/dynamic";
-
-import Signup from "@/components/Signup";
+import LoginView from "@/src/modules/login/View";
 
 export const metadata = {
   title: "Login",
 };
 
-const HankoAuth = dynamic(() => import("@/components/HankoAuth"), {
-  ssr: false,
-});
-
-export function LoginPage() {
+export default async function Page() {
   return (
     <div className="h-screen flex justify-center items-center">
-      <HankoAuth />
-    </div>
-  );
-}
-
-export default function Page() {
-
-  return (
-    <div className="h-screen flex justify-center items-center">
-      <Signup></Signup>
+      <LoginView />
     </div>
   );
 }

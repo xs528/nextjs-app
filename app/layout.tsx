@@ -1,5 +1,5 @@
-import { ToastContainer } from "@/components/Toast";
-import { theme } from "@/constants";
+import { ToastContainer } from "@/src/components/Toast";
+import { theme } from "@/src/constants";
 
 import "./globals.css";
 
