@@ -22,7 +22,7 @@ export default async function Page() {
           </div>
         </div>
       </div>
-      <footer className="flex-none footer footer-center p-4 bg-base-300 text-base-content">
+      <footer className="flex-none footer footer-center p-2 bg-base-300 text-base-content text-xs">
         <div>
           <a
             className="link link-hover"

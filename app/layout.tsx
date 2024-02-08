@@ -4,8 +4,7 @@ import { theme } from "@/src/constants";
 import "./globals.css";
 
 export const metadata = {
-  title: "All By Nextjs",
-  description: "all by nextjs",
+  title: "〔须尽欢〕",
 };
 
 export default function RootLayout({
