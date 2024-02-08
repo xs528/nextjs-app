@@ -8,9 +8,11 @@ datasource db {
 }
 
 model User {
-  id           Int     @id @default(autoincrement())
-  name         String  @unique
-  passwordHash String
-  email        String? @unique
-  phoneNumber  String? @unique
+  id            Int      @id @default(autoincrement())
+  name          String   @unique
+  passwordHash  String
+  email         String?  @unique
+  phoneNumber   String?  @unique
+  registerTime  DateTime @default(now())
+  lastLoginTime DateTime @default(now())
 }

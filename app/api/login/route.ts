@@ -15,6 +15,15 @@ export async function POST(request: NextRequest) {
     const token = genToken({ id: user.id, name: user.name });
     const tokenCookie = genTokenCookie(token);
 
+    prisma.user
+      .update({
+        data: { lastLoginTime: new Date() },
+        where: { name: username },
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+
     return NextResponse.json(
       { code: 0, msg: "ok" },
       { headers: { "Set-Cookie": tokenCookie } }

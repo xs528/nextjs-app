@@ -17,6 +17,8 @@ export async function getUserInfo() {
       if (user) {
         return {
           name: user.name,
+          registerTime: user.registerTime,
+          lastLoginTime: user.lastLoginTime,
         };
       }
     }

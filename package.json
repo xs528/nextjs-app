@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dbMigrate": "dotenv -e .env.local prisma migrate dev",
+    "dbDeploy": "dotenv -e .env.local prisma migrate deploy"
   },
   "dependencies": {
     "@prisma/client": "^5.9.1",
@@ -19,6 +21,8 @@
     "bcrypt": "^5.1.1",
     "cookie": "^0.6.0",
     "daisyui": "^4.6.0",
+    "dotenv": "^16.4.1",
+    "dotenv-cli": "^7.3.0",
     "eslint": "^8.40.0",
     "eslint-config-next": "^14.1.0",
     "jsonwebtoken": "^9.0.2",

@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation'
+import { redirect } from "next/navigation";
 
 import { getUserInfo } from "@/src/modules/login/actions";
 
@@ -6,7 +6,7 @@ export default async function Page() {
   const userInfo = await getUserInfo();
 
   if (!userInfo) {
-    redirect('/login');
+    redirect("/login");
   }
 
   return (
@@ -19,6 +19,10 @@ export default async function Page() {
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md">
             <h1 className="mb-5 text-5xl">Hello {userInfo?.name}</h1>
+            <div className="text-xs">
+              <p>注册时间：{userInfo.registerTime.toLocaleString()}</p>
+              <p>最后登录时间：{userInfo.lastLoginTime.toLocaleString()}</p>
+            </div>
           </div>
         </div>
       </div>
