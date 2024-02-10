@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" viewBox="0 0 340 250"
+    color-interpolation-filters="sRGB">
+    <g>
+        <path fill="#fff" pointer-events="none" d="M130 85h80v80h-80z" />
+        <g transform="translate(120 75)" mask="url(#prefix__a)">
+            <path transform="translate(-6 -6)" fill="url(#prefix__b)" pointer-events="none" d="M0 0h112v112H0z" />
+        </g>
+    </g>
+    <defs>
+        <linearGradient x1="0" y1="1" x2="0" y2="0" id="prefix__b">
+            <stop offset="0%" stop-color="#2cf1ae" />
+            <stop offset="50%" stop-color="#1eaafd" />
+            <stop offset="100%" stop-color="#dd3ffc" />
+        </linearGradient>
+    </defs>
+    <mask id="prefix__a">
+        <g fill="#fff"><svg viewBox="0 0 60 60" width="100" height="100" overflow="visible">
+                <g mask="url(#prefix__c)"><svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="5 5 90 90"
+                        enable-background="new 0 0 100 100" width="60" height="60" overflow="visible">
+                        <path
+                            d="M75.921 5H24.305C13.752 5 5 13.752 5 24.305v51.616C5 86.472 13.752 95 24.305 95h51.616C86.472 95 95 86.472 95 75.921V24.305C95 13.752 86.472 5 75.921 5z" />
+                        <defs>
+                            <filter id="prefix__magHR1sexi5fZNM0BYESO">
+                                <feColorMatrix
+                                    values="0 0 0 0 0.99609375 0 0 0 0 0.99609375 0 0 0 0 0.99609375 0 0 0 1 0" />
+                            </filter>
+                        </defs>
+                    </svg></g>
+                <mask id="prefix__c"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="5 5 90 90" enable-background="new 0 0 100 100" width="60" height="60"
+                        overflow="visible">
+                        <path
+                            d="M75.921 5H24.305C13.752 5 5 13.752 5 24.305v51.616C5 86.472 13.752 95 24.305 95h51.616C86.472 95 95 86.472 95 75.921V24.305C95 13.752 86.472 5 75.921 5z" />
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.604 44.792" width="45" height="45"
+                        x="7.5" y="7.5" fill="#000">
+                        <path transform="translate(-5.479 39.516)"
+                            d="M32.34-35.72q.71-5.06 5.35-3.37 8.44 4.78 1.12 11.88-1.97 2.11-3.72 4.22-1.41 2.04.28 4.22 4.92 6.32 7.59 11.25 1.55 2.95 1.48 5.62-1.55 5.28-6.47 6.68-2.46.92-4.92-1.55-1.48-1.82-2.89-5.62-1.47-3.24-3.3-6.54-1.06-1.83-2.74.35-3.66 5.13-7.03 10.48-3.03 3.58-5.98 3.23-6.54-1.12-5.48-7.59.91-2.25 3.86-5.63 4.01-4.92 8.58-9.84 1.76-2.11.28-4.22-3.94-5.48-8.37-9.77-2.53-1.97-2.6-3.17-.14-1.12 1.2-2.46 7.94-3.79 17.3 7.39 1.54 1.75 3.37-.29l2.46-3.44q.63-1.06.63-1.83zm30.38-2.53q3.8-1.13 10.41-.21 2.53.7 4.21.28 2.11-.98 4.22.63 5.42 4.78 5.84 11.04.21 2.6-2.32 3.8-3.38 1.26-6.96-3.09-5.84-6.47-12.17-4.72-1.61.99-1.54 2.61-.36 1.75 1.54 3.51 1.62 1.2 3.52 1.27 6.89 1.19 11.25 3.02 3.09 1.06 5.34 4.08 3.52 5.34.92 12.16-1.2 2.89-4.36 5.49-9.14 5.34-20.74 2.88-6.9-1.55-10.62-7.24-1.69-2.96-.78-6.4 1.27-3.66 5.14-4.15 7.03-.28 7.03 6.26.49 2.32 3.23 3.58 3.66 1.2 6.47-.7 3.03-2.95.7-6.96-1.33-1.27-2.74-1.83-9.14-1.61-14.06-4.64-5.27-5.55-2.95-12.8 2.32-6.6 9.42-7.87z" />
+                    </svg></mask>
+            </svg></g>
+    </mask>
+</svg>

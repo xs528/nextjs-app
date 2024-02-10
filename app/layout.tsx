@@ -14,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh" data-theme={theme}>
+      <head>
+        <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+      </head>
       <body>
         {children}
         <ToastContainer />
