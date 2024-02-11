@@ -4,7 +4,7 @@ import { theme } from "@/src/constants";
 import "./globals.css";
 
 export const metadata = {
-  title: "〔须尽欢〕",
+  title: "须尽欢",
 };
 
 export default function RootLayout({
@@ -14,9 +14,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh" data-theme={theme}>
-      <head>
-        <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
-      </head>
       <body>
         {children}
         <ToastContainer />
