@@ -7,25 +7,27 @@ import prisma from "@/src/utils/prisma";
 export async function getUserInfo() {
   const token = cookies().get("token")?.value || "";
 
-  try {
-    const payload = jwt.verify(token, process.env.JWT_SECRET);
-    if (typeof payload !== "string" && payload.name) {
-      const user = await prisma.user.findUnique({
-        where: { name: payload.name },
-      });
-
-      if (user) {
-        return {
-          name: user.name,
-          registerTime: user.registerTime,
-          lastLoginTime: user.lastLoginTime,
-        };
+  if (token) {
+    try {
+      const payload = jwt.verify(token, process.env.JWT_SECRET);
+      if (typeof payload !== "string" && payload.name) {
+        const user = await prisma.user.findUnique({
+          where: { name: payload.name },
+        });
+  
+        if (user) {
+          return {
+            name: user.name,
+            registerTime: user.registerTime,
+            lastLoginTime: user.lastLoginTime,
+          };
+        }
       }
+    } catch (err) {
+      console.error(err);
     }
-  } catch (err) {
-    console.error(err);
   }
-
+  
   return null;
 }
 
